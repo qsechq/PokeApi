@@ -1,0 +1,104 @@
+$main-color: #1E1E1E;
+$small-width: 990px;
+$tablets: 768px;
+$phones: 420px;
+
+body,
+html {
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $main-color;
+  font-size: 16px;
+  line-height: normal;
+}
+
+
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0;
+}
+
+svg {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+    margin: 64px auto 0;
+}
+
+input {
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    padding: 13px 25px;
+    &::placeholder {
+        color: $main-color;
+    }
+}
+
+a {
+    color: $main-color;
+    font-size: 12px;
+    background: #B5DBDD;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 0;
+}

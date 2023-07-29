@@ -1,0 +1,17 @@
+.pokemons__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search {
+    margin-bottom: 48px;
+}
+
+.x-pokemon__item {
+    width: calc(20% - 12px);
+    margin: 0 15px 15px 0;
+    &:nth-child(5n) {
+        margin: 0 0 15px 0;
+    }
+}

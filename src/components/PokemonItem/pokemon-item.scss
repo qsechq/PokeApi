@@ -1,0 +1,12 @@
+.c-pokemon__item {
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px 24px;
+    & .pokemon__name {
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+}

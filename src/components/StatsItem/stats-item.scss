@@ -1,0 +1,29 @@
+.c-char__item-ability {
+    border-radius: 4px;
+    background: #8D9BCC;
+    padding: 4px 12px;
+    & .char__val {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+}
+
+.char__item-name {
+    margin-bottom: 18px;
+    & .char__val {
+        text-transform: capitalize;
+    }
+}
+
+.char__sub {
+    color: #7E7E7E;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.char__val {
+    font-size: 21px;
+    font-weight: 600;
+}
