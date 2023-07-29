@@ -12,7 +12,7 @@
 
             <div class="info">
                 <div class="char">
-                    <stats-item :isName="true" class="char__item char__item-name" :name="pokemonCart.name" />
+                    <stats-item :isName="true" class="char__item char__item-name" :name="'name'" :pocemon="pokemonCart.name"/>
                     <ul class="char__list">
                         <li class="x-char__item" v-for="item in pokemonCart.stats" :key="item.stat.name">
                             <stats-item :name="item.stat.name" :value="item.base_stat" />

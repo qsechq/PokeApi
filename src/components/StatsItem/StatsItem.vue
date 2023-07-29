@@ -4,6 +4,7 @@
     </div>
     <div class="c-char__item " v-else-if="isName">
         <div class="char__sub">{{ name }}</div>
+        <div class="char__val">{{ pocemon }}</div>
     </div>
     <div class="c-char__item" v-else>
         <div class="char__sub">{{ name }}</div>
@@ -16,6 +17,10 @@ export default {
     name: 'StatsItem',
     props: {
         name: {
+            type: String,
+            default: ''
+        },
+        pocemon: {
             type: String,
             default: ''
         },
