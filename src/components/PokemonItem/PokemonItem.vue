@@ -1,6 +1,6 @@
 <template>
     <div class="c-pokemon__item">
-        <img :src='img' :alt="img" class="pokemon__img">
+        <pokemon-avatar :img='img' :name="name" class="pokemon__img" />
         <div class="pokemon__name">{{ name }}</div>
         <router-link :to="{ name: 'detail', params: { id: id } }">
             подробнее
@@ -9,8 +9,13 @@
 </template>
 
 <script>
+import { PokemonAvatar } from '../PokemonAvatar'
+
     export default {
         name: 'PokemonItem',
+        components: {
+            PokemonAvatar
+        },
         props: {
             name: {
                 type: String,

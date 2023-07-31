@@ -7,12 +7,12 @@
         </div>
         <div class="cart">
             <div class="picture">
-                <img :alt="pokemonCart.name" class="picture__img" :src='pokemonCart.sprites.front_shiny'>
+                <pokemon-avatar :name="pokemonCart.name" class="picture__img" :img='pokemonCart.sprites.front_shiny' />
             </div>
 
             <div class="info">
                 <div class="char">
-                    <stats-item :isName="true" class="char__item char__item-name" :name="'name'" :pocemon="pokemonCart.name"/>
+                    <stats-item :isName="true" class="char__item char__item-name" :name="'name'" :pokemon="pokemonCart.name"/>
                     <ul class="char__list">
                         <li class="x-char__item" v-for="item in pokemonCart.stats" :key="item.stat.name">
                             <stats-item :name="item.stat.name" :value="item.base_stat" />
@@ -37,11 +37,12 @@
 <script>
 import * as api from '../../api'
 import { StatsItem } from '../../components/StatsItem'
+import { PokemonAvatar } from '../../components/PokemonAvatar'
 
 export default {
     name: 'DetailView',
     components: {
-        StatsItem
+        StatsItem, PokemonAvatar
     },
     data() {
         return {

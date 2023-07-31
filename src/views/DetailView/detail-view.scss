@@ -2,8 +2,12 @@
     display: flex;
     border-radius: 4px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-    padding: 24px 16px;
+    padding: 24px 16px 16px;
     width: fit-content;
+}
+
+.info {
+    min-width: 228px;
 }
 
 .back {
@@ -15,15 +19,11 @@
 }
 
 .picture {
-    width: 50%;
+    width:26vw;
     max-width: 200px;
     margin-right: 24px;
-    min-width: 200px;
 }
 
-.info {
-    min-width: 228px;
-}
 
 .picture__img {
     max-width: 100%;
@@ -64,12 +64,8 @@
 }
 
 .x-abilities__item {
-    margin: 0 8px 0 0;
+    margin: 0 8px 8px 0;
     &:last-child {
         margin-right: 0;
     }
-}
-
-.abilities__list {
-    flex-wrap: nowrap;
 }

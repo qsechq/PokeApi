@@ -4,7 +4,7 @@
     </div>
     <div class="c-char__item " v-else-if="isName">
         <div class="char__sub">{{ name }}</div>
-        <div class="char__val">{{ pocemon }}</div>
+        <div class="char__val">{{ pokemon }}</div>
     </div>
     <div class="c-char__item" v-else>
         <div class="char__sub">{{ name }}</div>
@@ -20,7 +20,7 @@ export default {
             type: String,
             default: ''
         },
-        pocemon: {
+        pokemon: {
             type: String,
             default: ''
         },
