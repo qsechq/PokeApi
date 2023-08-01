@@ -50,10 +50,6 @@ svg {
   display: block;
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   border: none;
   background: transparent;
@@ -100,5 +96,6 @@ a {
     width: 100%;
     border-radius: 4px;
     text-align: center;
+    text-decoration: none;
     padding: 5px 0;
 }
